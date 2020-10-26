@@ -1,25 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './img/logo.svg';
+import bannerImg from './img/banner.png'
+
+import { 
+  Container,
+  Header,
+  Menu,
+  MenuNav,
+  MenuLogin,
+  Banner,
+  LoginButton,
+  LoginIcon,
+  SignUp,
+  Details,
+  BannerButton,
+} from './styles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header>
+        <Menu>
+          <MenuNav>
+            <img src={logo} alt="logo-nubank"/>
+            <ul>
+              <li><a href="#"> Início </a> </li>
+              <li><a href="#">Conta Digital</a></li>
+              <li><a href="#">Cartão de Crédito</a></li>
+              <li><a href="#">Pix (novo)</a></li>
+              <li><a href="#">Rewards</a></li>
+              <li><a href="#">Empréstimo</a></li>
+              <li><a href="#">Conta PJ</a></li>
+              <li><a href="#">Sobre nós</a></li>
+            </ul>
+          </MenuNav>
+
+          <MenuLogin>
+            <LoginButton>
+              Login
+              <LoginIcon size={25} />
+            </LoginButton>
+            <SignUp>Quero ser Nubank</SignUp>
+          </MenuLogin>
+        </Menu>
+
+        <Banner>
+          <Details>
+            <h1>Pix: um novo <br/> jeito de fazer <br/> transferências e <br/> pagamentos</h1>
+            <span>Saiba como funciona</span>
+            <BannerButton>Quero ser nubank</BannerButton>
+          </Details>
+          <img src={bannerImg} alt="banner_image"/>
+        </Banner>
+      </Header>
+    </Container>
   );
 }
 
