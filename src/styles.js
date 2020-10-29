@@ -17,7 +17,7 @@ export const Menu = styled.div`
 `
 
 export const MenuNav = styled.nav`
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     img {
@@ -76,10 +76,10 @@ export const SignUp = styled.button `
     cursor: pointer;
     color: #fff;
     padding: 12px 20px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1.2;
     font-size: 18px;
-    border-radius: 20px;
+    border-radius: 30px;
     height: 3rem;
 `;
 
@@ -89,10 +89,6 @@ export const Banner = styled.div`
     justify-content: space-around;
     background-color: rgb(142, 86, 190);
     color: #fff;
-    font-size: 3rem;
-    letter-spacing: -0.03em;
-    font-size: 1.75rem;
-    line-height: 1.16;
     width: 100%;
     padding: 124px 24px;
 
@@ -101,8 +97,19 @@ export const Banner = styled.div`
         height: auto;
     }
 
+    h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: -0.03em;
+        line-height: 1.16;
+    }
+
     span {
-        margin-top: 10px;
+        cursor: pointer;
+        line-height: 1.35;
+        letter-spacing: -0.03em;
+        font-size: 1.125rem;
+        margin-top: 15px;
     }
 `
 
@@ -122,6 +129,44 @@ export const BannerButton = styled.button`
     font-weight: bold;
     line-height: 1.2;
     font-size: 18px;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 200px;
+`;
+
+export const BringYouHelp = styled.section`
+    padding: 48px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        max-width: 319px;
+        height: 375px;
+    }
+
+
+`;
+
+export const BringYouHelpLeft = styled.div`
+    max-width: 100%;
+    padding: 20px;
+    h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: -0.03em;
+        line-height: 1.16;
+        margin-bottom: 15px;
+    }
+    
+    span {
+        cursor: pointer;
+        line-height: 1.35;
+        letter-spacing: -0.03em;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: #9359c1;
+        /* margin-top: 30px; */
+    }
+
+
 `;

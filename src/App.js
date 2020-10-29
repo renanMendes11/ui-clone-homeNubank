@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+
 import logo from './img/logo.svg';
-import bannerImg from './img/banner.png'
+import bannerImg from './img/banner.png';
+import fgtsImg from './img/fgts.png';
 
 import { 
   Container,
@@ -15,6 +17,8 @@ import {
   SignUp,
   Details,
   BannerButton,
+  BringYouHelp,
+  BringYouHelpLeft
 } from './styles';
 
 function App() {
@@ -54,6 +58,17 @@ function App() {
           <img src={bannerImg} alt="banner_image"/>
         </Banner>
       </Header>
+
+      <main>
+        <BringYouHelp>
+          <BringYouHelpLeft>
+            <h1>Traga seu <br/> FGTS e Auxílio <br/> Emergencial <br/> para o Nubank</h1>
+            <span>Confira os benefícios </span>
+          </BringYouHelpLeft>
+          <img src={fgtsImg} alt="banner_image"/>
+        </BringYouHelp>
+
+      </main>
     </Container>
   );
 }
