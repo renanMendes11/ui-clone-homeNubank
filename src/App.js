@@ -7,6 +7,7 @@ import fgtsImg from './img/fgts.png';
 import phone from './img/phone.png';
 import creditCard from './img/creditCard.png';
 import rewards from './img/rewards.png';
+import blogImage from './img/blogImage.png';
 
 import { 
   Container,
@@ -31,8 +32,19 @@ import {
   BoldRewards,
   Rewards,
   RewardsLeft,
-  RelationMoneyPeople
+  RelationMoneyPeople,
+  NuCommunity,
+  BlogSection,
+  Footer,
+  Row,
+  RowSide,
+  CopyrightContainer,
+  Copyright,
+  SocialMedias,
+  LanguageChoice,
 } from './styles';
+import { CgFacebook, CgInstagram, CgTwitter, CgYoutube } from 'react-icons/cg';
+import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
 
 function App() {
   return (
@@ -122,8 +134,114 @@ function App() {
             </h1>
             <span>É nisso que acreditamos <ArrowIcon/> </span> 
         </RelationMoneyPeople>
+        <NuCommunity>
+            <h1>
+              NuCommunity<br/> <br/> A comunidade <br/> oficial do Nubank<br/>
+            </h1>
+            <span>Tire dúvidas, compartilhe ideias e faça parte <ArrowIcon/> </span> 
+        </NuCommunity>
 
+        <BlogSection>
+            <h1>
+            Um blog para você<br/> repensar o seu <br/> dinheiro
+            </h1>
+            <span>Conheça o Fala, Nubank <ArrowIcon/> </span> 
+        </BlogSection>
       </main>
+
+      <Footer>
+        <Row>
+          <RowSide>
+            <p>Nubank</p>
+            <a href="#">Sobre nós</a>
+            <a href="#">Carreias</a>
+            <a href="#">Perguntas Frequentes</a>
+            <a href="#">Contato</a>
+            <a href="#">Imprensa</a>
+          </RowSide>
+          <RowSide>
+            <p>Produtos</p>
+            <a href="#">Conta Digital</a>
+            <a href="#">Cartão de Crédito</a>
+            <a href="#">Rewards</a>
+            <a href="#">Empréstimo</a>
+            <a href="#">Conta PJ</a>
+          </RowSide>
+        </Row>
+        <Row>
+        <RowSide>
+            <p>Explore</p>
+            <a href="#">Comunidade</a>
+            <a href="#">Blog</a>
+            <a href="#">Newsletter</a>
+            <a href="#">México</a>
+            <a href="#">Argentina</a>
+            <a href="#">Colômbia</a>
+          </RowSide>
+          <RowSide>
+            <p>Veja Também</p>
+            <a href="#">Auxílio Emergencial e FGTS</a>
+            <a href="#">Tudo sobre o Pix</a>
+          </RowSide>
+        </Row>
+        <Row>
+          <RowSide>
+            <p>Transparência</p>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Política de Compliance</a>
+            <a href="#">Contratos</a>
+            <a href="#">Política de Segurança</a>
+            <a href="#">Relatórios Financeiros</a>
+            <a href="#">Ética & Compliance</a>
+            <a href="#">Dados Abertos</a>
+            <a href="#">SCR</a>
+          </RowSide>
+          <RowSide>
+            <p>Ouvidoria</p>
+            <a href="#">0800 887 0463</a>
+            <a href="#">ouvidoria@nubank.com.br</a>
+            <a href="#">Atendimento das 9h às 18h (dias úteis)</a>
+          </RowSide>
+        </Row>
+        <Row>
+        <RowSide>
+            <p>Fale com a gente</p>
+            <a href="#">0800 608 6236</a>
+            <a href="#">meajuda@nubank.com.br</a>
+            <a href="#">Atendimento 24h</a>
+          </RowSide>
+          <RowSide>
+            <p>Baixe o app</p>
+            <a href="#"></a>
+            <a href="#"></a>
+          </RowSide>
+        </Row>
+      </Footer>
+
+      <CopyrightContainer>
+        <Copyright>
+          <img src={logo} alt="logo-nubank"/>
+          <div>
+            <p>Nu Pagamentos S.A</p>
+            <p>Rua Capote Valente, 39 - São Paulo, SP - 05409-000</p>
+          </div>
+        </Copyright>
+        <SocialMedias>
+          <AiFillFacebook size={30} color='#fff' />
+          <AiFillInstagram size={30} color='#fff'/>
+          <AiFillLinkedin size={30} color='#fff'/>
+          <AiFillYoutube size={30} color='#fff'/>
+          <AiOutlineTwitter size={30} color='#fff'/>
+        </SocialMedias>
+      </CopyrightContainer>
+
+      <LanguageChoice>
+        <label htmlFor='portugues'>Português</label>
+        <input type="radio" name="portugues" id="portugues"/>
+        <label for='english' >English</label>
+        <input type="radio" name="english" id="english"/>
+      </LanguageChoice>
+
     </Container>
   );
 }
